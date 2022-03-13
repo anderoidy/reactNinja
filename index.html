@@ -10,18 +10,24 @@
   <body>
       <h1>Ola mundo no HTML</h1>
     <div id="root"></div>
+    <div id="headerx"></div>
     <script type="text/babel">
       ReactDOM.render(
         <h1>Olá, Mundo!</h1>,
         document.getElementById('root')
       );
+
+      ReactDOM.render(<h3>Eu sou o elemento h3  do header </h3>, document.getElementById('headerx'))
+        console.log(h3)
+        
       var h2 = React.createElement('h2', null, [
           React.createElement('span', null,'texto do span '),
-          React.createElement('span', null, 'texto do span 2'),
+          React.createElement('span', null, 'texto do span 2 '),
           React.createElement('i', null, 'frase em italico ')
         ])
       ReactDOM.render(h2, document.getElementById('root'))
       console.log(h2)
     </script>
+
   </body>
 </html>
